@@ -404,6 +404,9 @@
   .container {
     padding: 30px;
   }
+  .main-wrap {
+    margin-top: 60px;
+  }
   .main-wrap .books-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
