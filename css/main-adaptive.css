@@ -601,6 +601,7 @@
   .service .service-container {
     grid-template-columns: 100%;
     padding-top: 80px;
+    padding-bottom: 50px;
   }
   .service .service-container .service-item .icon {
     width: 110px;
@@ -610,6 +611,10 @@
     width: 70%;
     margin: 0 auto;
     font-size: 20px;
+  }
+  .service .page {
+    top: -16px;
+    right: 65px;
   }
   .genres {
     padding-bottom: 45px;
@@ -674,6 +679,9 @@
   }
   .start .start-wrap .library .page {
     right: 2px;
+  }
+  .container {
+    padding: 30px;
   }
   .genres .genres-header h1 {
     font-size: 19px;
@@ -741,7 +749,7 @@
     padding-bottom: 30px;
   }
   .genres .genres-header h1 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .genres .genres-header .arrow {
     width: 40px;
@@ -773,6 +781,9 @@
   .registration p {
     font-size: 14px;
     letter-spacing: 1px;
+  }
+  .registration .q2 {
+    padding: 0;
   }
   .registration .btn-rgstr {
     margin-top: 50px;
