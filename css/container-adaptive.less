@@ -444,7 +444,6 @@
 
 @media screen and (max-width: 685px) {
   .container {
-    padding: 60px;
   }
   .main-wrap {
     .genre-list {
@@ -580,12 +579,14 @@
     .books-grid {
       .book-cell {
         .title-read {
+          height: 300px;
           h5 {
-            font-size: 28px;
+            font-size: 23px;
           }
           .btn-read {
             a {
-              font-size: 30px;
+              font-size: 27px;
+              padding: 20px 0;
             }
           }
         }
@@ -613,17 +614,27 @@
 }
 
 @media screen and (max-width: 400px) {
+  .container {
+    padding: 30px;
+  }
   .main-wrap {
     .books-grid {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       .book-cell {
         .title-read {
           padding: 30px;
+          height: 290px;
           .title {
-            font-size: 25px;
+            font-size: 20px;
           }
           .author {
-            font-size: 28px;
+            font-size: 23px;
+          }
+          .btn-read {
+            a {
+              font-size: 25px;
+              padding: 15px 0;
+            }
           }
         }
       }

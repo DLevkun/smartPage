@@ -571,7 +571,7 @@
     text-align: center;
   }
   .genres .genres-header .arrow {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 80px;
     height: 80px;
   }
@@ -598,6 +598,9 @@
   }
   .container .header .burger {
     right: 40px;
+  }
+  .start {
+    margin-top: 40px;
   }
   .start .start-wrap .library .btn a img {
     width: 31px;
@@ -690,6 +693,9 @@
   }
 }
 @media screen and (max-width: 469px) {
+  .start {
+    margin-top: 60px;
+  }
   .start .start-wrap .library .start-text {
     font-size: 18px;
   }
@@ -700,8 +706,8 @@
     padding: 30px;
   }
   .genres .genres-header .arrow {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   .genres .genre-grid {
     margin-bottom: 30px;
@@ -765,8 +771,8 @@
     font-size: 23px;
   }
   .genres .genres-header .arrow {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
   }
   .genres .lines img {
     height: 60px;
