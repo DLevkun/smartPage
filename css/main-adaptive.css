@@ -613,8 +613,8 @@
     font-size: 20px;
   }
   .service .page {
-    top: -16px;
-    right: 65px;
+    top: -30px;
+    right: 50px;
   }
   .genres {
     padding-bottom: 45px;
@@ -777,6 +777,8 @@
   }
   .service .page {
     font-size: 21px;
+    right: 40px;
+    top: -26px;
   }
   .registration p {
     font-size: 14px;
