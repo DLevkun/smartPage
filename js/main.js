@@ -3,7 +3,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("fadeInLeft");
         }
     });
@@ -14,7 +14,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("fadeInRight");
         }
     });
@@ -25,7 +25,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("lightSpeedIn");
         }
     });
@@ -36,7 +36,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("fadeInLeft");
         }
     });
@@ -47,7 +47,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("heartBeat");
         }
     });
@@ -58,7 +58,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("fadeIn");
         }
     });
@@ -69,7 +69,7 @@ $(window).scroll(function(){
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-        if(imagePos < topOfWindow+900){
+        if(imagePos < topOfWindow+800){
             $(this).addClass("pulse");
         }
     });
