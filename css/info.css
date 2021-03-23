@@ -358,7 +358,7 @@ h6 {
 }
 .book .container .book-wrap .author-info .author .info .author-text .all-books h6:after {
   position: relative;
-  top: 3px;
+  top: 2px;
   left: 15px;
   content: url(../img/blue-arrow.png);
 }

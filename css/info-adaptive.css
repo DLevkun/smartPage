@@ -436,9 +436,11 @@
     letter-spacing: 0;
   }
   .book .container .book-wrap .author-info .author .info .author-text .all-books a {
-    font-size: 10px;
+    font-size: 15px;
   }
   .book .container .book-wrap .author-info .author .info .author-text .all-books h6:after {
+    top: 1px;
+    left: 9px;
     content: url(../img/arrow-320.png);
   }
   .footer .container {
