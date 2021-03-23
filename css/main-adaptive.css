@@ -563,6 +563,18 @@
   .service .page {
     font-size: 21px;
   }
+  .genres .genres-header {
+    flex-direction: column;
+  }
+  .genres .genres-header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .genres .genres-header .arrow {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
   .genres .genre-grid {
     margin-bottom: 40px;
   }
@@ -620,7 +632,11 @@
     padding-bottom: 45px;
   }
   .genres .genres-header h1 {
-    font-size: 23px;
+    font-size: 27px;
+  }
+  .genres .genres-header .arrow {
+    width: 65px;
+    height: 65px;
   }
   .genres .genre-grid .genre {
     height: 490px;
@@ -682,9 +698,6 @@
   }
   .container {
     padding: 30px;
-  }
-  .genres .genres-header h1 {
-    font-size: 19px;
   }
   .genres .genres-header .arrow {
     width: 50px;
@@ -749,7 +762,7 @@
     padding-bottom: 30px;
   }
   .genres .genres-header h1 {
-    font-size: 16px;
+    font-size: 23px;
   }
   .genres .genres-header .arrow {
     width: 40px;
