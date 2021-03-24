@@ -642,27 +642,27 @@
       #menu-toggle:checked ~ .menu {
         visibility: visible;
         opacity: 1;
-        padding: 25px 75px 50px;
+        padding: 35px 35px 25px;
         div {
           margin-top: 50px;
           a {
             color: white;
-            font-size: 25px;
+            font-size: 22px;
           }
         }
       }
       #menu-toggle:checked ~ .icons {
         visibility: visible;
         opacity: 1;
-        top: 420px;
+        top: 380px;
         display: flex;
         justify-content: space-around;
-        padding: 30px;
+        padding: 20px;
         margin: 0;
         .saved,
         .account {
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
         }
       }
       .menu {
@@ -672,8 +672,8 @@
         opacity: 0;
         top: 0;
         right: 0;
-        width: 450px;
-        height: 420px;
+        width: 350px;
+        height: 380px;
         margin: 0;
         z-index: 2;
         box-shadow: 2px -11px 12px 4px grey;
@@ -688,8 +688,8 @@
         visibility: hidden;
         opacity: 0;
         right: 0;
-        width: 450px;
-        height: 100px;
+        width: 350px;
+        height: 75px;
         margin: 0;
         background-color: white;
         box-shadow: 2px 2px 12px 4px grey;
@@ -1124,6 +1124,19 @@
 @media screen and(max-width:400px) {
   .container {
     .header {
+      .menu {
+        width: 270px;
+      }
+      #menu-toggle:checked ~ .menu {
+        div {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+      .icons {
+        width: 270px;
+      }
       .burger {
         width: 30px;
         height: 30px;
