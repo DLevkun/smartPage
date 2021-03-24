@@ -110,13 +110,13 @@ a {
 .header .menu div a:hover {
   color: white;
 }
-.header .menu .books a:hover {
+.header .menu .books a {
   background-color: #feba21;
-}
-.header .menu .main a {
-  background-color: #005877;
   font-weight: 500;
   color: white;
+}
+.header .menu .main a:hover {
+  background-color: #005877;
 }
 .header .menu .audio a:hover {
   background-color: #f4a261;
