@@ -70,6 +70,14 @@
     margin: 0;
   }
 }
+@media screen and (max-width: 1050px) {
+  .container .header .menu {
+    margin: 0 55px;
+  }
+  .container .header .icons {
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 992px) {
   .container {
     padding: 45px;
@@ -134,96 +142,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .container .header {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 150px;
-    z-index: 20;
-  }
-  .container .header .burger {
-    opacity: 1;
-    z-index: 4;
-    top: 52px;
-    width: 47px;
-  }
-  .container .header .logo {
-    position: absolute;
-    top: 41px;
-    left: 75px;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span {
-    transform: rotate(45deg);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span::before {
-    top: 0;
-    transform: rotate(0);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span::after {
-    top: 0;
-    transform: rotate(90deg);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .menu {
-    visibility: visible;
-    opacity: 1;
-    padding: 25px 75px 50px;
-  }
-  .container .header #menu-toggle:checked ~ .menu div {
-    margin-top: 50px;
-  }
-  .container .header #menu-toggle:checked ~ .menu div a {
-    color: white;
-    font-size: 25px;
-  }
-  .container .header #menu-toggle:checked ~ .icons {
-    visibility: visible;
-    opacity: 1;
-    top: 420px;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    margin: 0;
-  }
-  .container .header #menu-toggle:checked ~ .icons .saved,
-  .container .header #menu-toggle:checked ~ .icons .account {
-    width: 40px;
-    height: 40px;
-  }
-  .container .header .menu {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    width: 450px;
-    height: 420px;
-    margin: 0;
-    z-index: 2;
-    box-shadow: 2px -11px 12px 4px grey;
-    background-color: #2a9d8f;
-  }
-  .container .header .menu div {
-    display: block;
-  }
-  .container .header .icons {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 0;
-    width: 450px;
-    height: 100px;
-    margin: 0;
-    background-color: white;
-    box-shadow: 2px 2px 12px 4px grey;
-    z-index: 1;
-  }
   .registration .header-account .chapter {
     width: 190px;
   }
@@ -258,20 +176,99 @@
     padding: 40px;
   }
   .container .header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
     height: 120px;
+    z-index: 20;
+  }
+  .container .header .burger {
+    opacity: 1;
+    z-index: 4;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    right: 40px;
   }
   .container .header .logo {
+    position: absolute;
     top: 33px;
     left: 40px;
   }
   .container .header .logo a img {
     width: 125px;
   }
-  .container .header .burger {
-    width: 40px;
-    height: 40px;
-    top: 40px;
-    right: 40px;
+  .container .header #menu-toggle:checked ~ .burger > span {
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  .container .header #menu-toggle:checked ~ .burger > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: white;
+  }
+  .container .header #menu-toggle:checked ~ .burger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: white;
+  }
+  .container .header #menu-toggle:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+    padding: 35px 35px 25px;
+  }
+  .container .header #menu-toggle:checked ~ .menu div {
+    margin-top: 50px;
+  }
+  .container .header #menu-toggle:checked ~ .menu div a {
+    color: white;
+    font-size: 22px;
+  }
+  .container .header #menu-toggle:checked ~ .icons {
+    visibility: visible;
+    opacity: 1;
+    top: 380px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+  }
+  .container .header #menu-toggle:checked ~ .icons .saved,
+  .container .header #menu-toggle:checked ~ .icons .account {
+    width: 30px;
+    height: 30px;
+  }
+  .container .header .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 380px;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 2px -11px 12px 4px grey;
+    background-color: #2a9d8f;
+  }
+  .container .header .menu div {
+    display: block;
+  }
+  .container .header .icons {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    width: 350px;
+    height: 75px;
+    margin: 0;
+    background-color: white;
+    box-shadow: 2px 2px 12px 4px grey;
+    z-index: 1;
   }
   .container {
     padding: 30px;
@@ -355,6 +352,15 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .container .header .menu {
+    width: 270px;
+  }
+  .container .header #menu-toggle:checked ~ .menu div a {
+    font-size: 18px;
+  }
+  .container .header .icons {
+    width: 270px;
+  }
   .container .header .burger {
     width: 30px;
     height: 30px;
