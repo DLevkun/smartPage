@@ -50,6 +50,7 @@ a {
 }
 .header {
   position: relative;
+  /*max-width: 1290px;*/
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -109,13 +110,13 @@ a {
 .header .menu div a:hover {
   color: white;
 }
-.header .menu .books a {
+.header .menu .books a:hover {
   background-color: #feba21;
+}
+.header .menu .main a {
+  background-color: #005877;
   font-weight: 500;
   color: white;
-}
-.header .menu .main a:hover {
-  background-color: #005877;
 }
 .header .menu .audio a:hover {
   background-color: #f4a261;
@@ -136,10 +137,13 @@ a {
 }
 .header .icons .saved a {
   position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 .header .icons .saved a img {
   position: absolute;
-  top: -6px;
+  /*top: -6px;*/
   transition: all 0.4s ease;
 }
 .header .icons .saved a #heart-hover {

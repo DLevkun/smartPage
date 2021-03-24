@@ -149,22 +149,7 @@
         }
       }
       .icons {
-        margin-left: 156px;
-        .account {
-          a {
-            img {
-              width: 30px;
-            }
-          }
-        }
-        .saved {
-          a {
-            img {
-              width: 30px;
-              top: 1px;
-            }
-          }
-        }
+        margin-left: 97px;
       }
       .menu {
         font-size: 20px;
@@ -193,103 +178,56 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1050px) {
   .container {
     .header {
-      position: fixed;
-      background-color: white;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 150px;
-      z-index: 20;
-      .burger {
-        opacity: 1;
-        z-index: 4;
+      .menu {
+        margin: 0 55px;
       }
+      .icons {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 45px;
+    .header {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, 1fr);
       .logo {
-        position: absolute;
-        top: 32px;
-        left: 75px;
-      }
-      #menu-toggle:checked ~ .burger > span {
-        transform: rotate(45deg);
-        background-color: white;
-      }
-      #menu-toggle:checked ~ .burger > span::before {
-        top: 0;
-        transform: rotate(0);
-        background-color: white;
-      }
-      #menu-toggle:checked ~ .burger > span::after {
-        top: 0;
-        transform: rotate(90deg);
-        background-color: white;
-      }
-      #menu-toggle:checked ~ .menu {
-        visibility: visible;
-        opacity: 1;
-        padding: 25px 75px 50px;
-        div {
-          margin-top: 50px;
-          a {
-            color: white;
-            font-size: 25px;
-          }
-        }
-      }
-      #menu-toggle:checked ~ .icons {
-        visibility: visible;
-        opacity: 1;
-        top: 420px;
-        display: flex;
-        justify-content: space-around;
-        padding: 30px;
-        margin: 0;
-        .saved,
-        .account {
-          width: 40px;
-          height: 40px;
-        }
-        .saved {
-          a {
-            img {
-              top: 18px;
-            }
-          }
-        }
+        grid-column: 1/2;
       }
       .menu {
-        display: block;
-        position: fixed;
-        /*transition: opacity 0.5s ease;*/
-        visibility: hidden;
-        opacity: 0;
-        top: 0;
-        right: 0;
-        width: 450px;
-        height: 420px;
-        margin: 0;
-        z-index: 2;
-        box-shadow: 2px -11px 12px 4px grey;
-        background-color: #2a9d8f;
+        margin: 0 37px;
+        grid-column: 1/3;
+        grid-row: 2/3;
         div {
-          display: block;
+          margin: 0;
         }
       }
       .icons {
-        display: block;
-        position: fixed;
-        /*transition: opacity 0.5s ease;*/
-        visibility: hidden;
-        opacity: 0;
-        right: 0;
-        width: 450px;
-        height: 100px;
-        margin: 0;
-        background-color: white;
-        box-shadow: 2px 2px 12px 4px grey;
-        z-index: 1;
+        grid-column: 2/3;
+        margin-left: auto;
+        .account {
+          a {
+            img {
+              width: 30px;
+            }
+          }
+        }
+        .saved {
+          width: 30px;
+          height: 30px;
+          a {
+            img {
+              width: 28px;
+              margin: 0 auto;
+            }
+          }
+        }
       }
     }
   }
@@ -374,48 +312,94 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 50px;
     .header {
-      height: 120px;
-      .logo {
-        img {
-          width: 150px;
-        }
-        top: 28px;
-        left: 50px;
-      }
+      position: fixed;
+      background-color: white;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 150px;
+      z-index: 20;
       .burger {
-        width: 36px;
-        height: 36px;
-        top: 42px;
-        right: 50px;
-        span {
-          height: 5px;
-        }
-        span::before {
-          height: 5px;
-        }
-        span::after {
-          height: 5px;
-        }
+        opacity: 1;
+        z-index: 4;
+        top: 52px;
+        width: 47px;
       }
-      .burger span::before {
-        top: -14px;
+      .logo {
+        position: absolute;
+        top: 41px;
+        left: 75px;
       }
-      .burger span::after {
-        top: 14px;
+      #menu-toggle:checked ~ .burger > span {
+        transform: rotate(45deg);
+        background-color: white;
       }
-      .menu,
-      .icons {
-        width: 300px;
+      #menu-toggle:checked ~ .burger > span::before {
+        top: 0;
+        transform: rotate(0);
+        background-color: white;
+      }
+      #menu-toggle:checked ~ .burger > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color: white;
       }
       #menu-toggle:checked ~ .menu {
-        padding: 20px 50px 35px;
+        visibility: visible;
+        opacity: 1;
+        padding: 25px 75px 50px;
         div {
+          margin-top: 50px;
           a {
+            color: white;
             font-size: 25px;
           }
         }
+      }
+      #menu-toggle:checked ~ .icons {
+        visibility: visible;
+        opacity: 1;
+        top: 420px;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        margin: 0;
+        .saved,
+        .account {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .menu {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        width: 450px;
+        height: 420px;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 2px -11px 12px 4px grey;
+        background-color: #2a9d8f;
+        div {
+          display: block;
+        }
+      }
+      .icons {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 0;
+        width: 450px;
+        height: 100px;
+        margin: 0;
+        background-color: white;
+        box-shadow: 2px 2px 12px 4px grey;
+        z-index: 1;
       }
     }
   }
@@ -462,6 +446,7 @@
 @media screen and (max-width: 576px) {
   .container {
     .header {
+      height: 120px;
       .logo {
         a {
           img {
@@ -472,6 +457,9 @@
         left: 40px;
       }
       .burger {
+        width: 40px;
+        height: 40px;
+        top: 40px;
         right: 40px;
       }
     }
@@ -617,6 +605,29 @@
   .container {
     padding: 30px;
   }
+  .container {
+    .header {
+      .burger {
+        width: 30px;
+        height: 30px;
+        top: 44px;
+        span {
+          height: 4px;
+        }
+      }
+      .burger span:before,
+      .burger span:after {
+        height: 4px;
+      }
+      .burger span:before {
+        top: -12px;
+      }
+      .burger span:after {
+        top: 12px;
+      }
+    }
+  }
+
   .main-wrap {
     margin-top: 60px;
     .books-grid {

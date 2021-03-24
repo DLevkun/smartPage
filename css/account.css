@@ -110,8 +110,10 @@ a {
 .header .menu .books a:hover {
   background-color: #feba21;
 }
-.header .menu .main a:hover {
+.header .menu .main a {
   background-color: #005877;
+  font-weight: 500;
+  color: white;
 }
 .header .menu .audio a:hover {
   background-color: #f4a261;
@@ -127,26 +129,22 @@ a {
 .header .icons img {
   width: 40px;
 }
-.header .icons .account {
-  margin-left: 5px;
-}
-.header .icons .account a {
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-.header .icons .account a img {
-  width: 30px;
+.header .icons .account img {
+  width: 35px;
+  padding-left: 3px;
 }
 .header .icons .saved {
   margin-left: 30px;
 }
 .header .icons .saved a {
   position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 .header .icons .saved a img {
   position: absolute;
-  top: -6px;
+  /*top: -6px;*/
   transition: all 0.4s ease;
 }
 .header .icons .saved a #heart-hover {

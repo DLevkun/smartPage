@@ -112,6 +112,12 @@
   }
 }
 @media screen and (max-width: 1050px) {
+  .container .header .menu {
+    margin: 0 55px;
+  }
+  .container .header .icons {
+    margin-left: 20px;
+  }
   .start .start-wrap {
     height: 800px;
   }
@@ -144,98 +150,38 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .container .header {
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 150px;
-    z-index: 20;
+  .container {
+    padding: 45px;
   }
-  .container .header .burger {
-    opacity: 1;
-    z-index: 4;
+  .container .header {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
   }
   .container .header .logo {
-    position: absolute;
-    top: 32px;
-    left: 75px;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span {
-    transform: rotate(45deg);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span::before {
-    top: 0;
-    transform: rotate(0);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .burger > span::after {
-    top: 0;
-    transform: rotate(90deg);
-    background-color: white;
-  }
-  .container .header #menu-toggle:checked ~ .menu {
-    visibility: visible;
-    opacity: 1;
-    padding: 25px 75px 50px;
-  }
-  .container .header #menu-toggle:checked ~ .menu div {
-    margin-top: 50px;
-  }
-  .container .header #menu-toggle:checked ~ .menu div a {
-    color: white;
-    font-size: 25px;
-  }
-  .container .header #menu-toggle:checked ~ .icons {
-    visibility: visible;
-    opacity: 1;
-    top: 420px;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    margin: 0;
-  }
-  .container .header #menu-toggle:checked ~ .icons .saved,
-  .container .header #menu-toggle:checked ~ .icons .account {
-    width: 40px;
-    height: 40px;
-  }
-  .container .header #menu-toggle:checked ~ .icons .saved a img {
-    top: 18px;
+    grid-column: 1/2;
   }
   .container .header .menu {
-    display: block;
-    position: fixed;
-    /*transition: opacity 0.5s ease;*/
-    visibility: hidden;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    width: 450px;
-    height: 420px;
-    margin: 0;
-    z-index: 2;
-    box-shadow: 2px -11px 12px 4px grey;
-    background-color: #2a9d8f;
+    margin: 0 37px;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
   .container .header .menu div {
-    display: block;
+    margin: 0;
   }
   .container .header .icons {
-    display: block;
-    position: fixed;
-    /*transition: opacity 0.5s ease;*/
-    visibility: hidden;
-    opacity: 0;
-    right: 0;
-    width: 450px;
-    height: 100px;
-    margin: 0;
-    background-color: white;
-    box-shadow: 2px 2px 12px 4px grey;
-    z-index: 1;
+    grid-column: 2/3;
+    margin-left: auto;
+  }
+  .container .header .icons .account a img {
+    width: 30px;
+  }
+  .container .header .icons .saved {
+    width: 30px;
+    height: 30px;
+  }
+  .container .header .icons .saved a img {
+    width: 28px;
+    margin: 0 auto;
   }
   .start .start-wrap {
     height: 735px;
@@ -411,52 +357,144 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 50px;
-  }
   .container .header {
-    height: 120px;
-  }
-  .container .header .logo {
-    top: 28px;
-    left: 50px;
-  }
-  .container .header .logo img {
-    width: 125px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 150px;
+    z-index: 20;
   }
   .container .header .burger {
-    width: 36px;
-    height: 36px;
-    top: 42px;
-    right: 50px;
+    opacity: 1;
+    z-index: 4;
+    top: 52px;
+    width: 47px;
   }
-  .container .header .burger span {
-    height: 5px;
+  .container .header .logo {
+    position: absolute;
+    top: 41px;
+    left: 75px;
   }
-  .container .header .burger span::before {
-    height: 5px;
+  .container .header #menu-toggle:checked ~ .burger > span {
+    transform: rotate(45deg);
+    background-color: white;
   }
-  .container .header .burger span::after {
-    height: 5px;
+  .container .header #menu-toggle:checked ~ .burger > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: white;
   }
-  .container .header .burger span::before {
-    top: -14px;
-  }
-  .container .header .burger span::after {
-    top: 14px;
-  }
-  .container .header .menu,
-  .container .header .icons {
-    width: 300px;
+  .container .header #menu-toggle:checked ~ .burger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: white;
   }
   .container .header #menu-toggle:checked ~ .menu {
-    padding: 20px 50px 35px;
+    visibility: visible;
+    opacity: 1;
+    padding: 25px 75px 50px;
+  }
+  .container .header #menu-toggle:checked ~ .menu div {
+    margin-top: 50px;
   }
   .container .header #menu-toggle:checked ~ .menu div a {
+    color: white;
     font-size: 25px;
   }
+  .container .header #menu-toggle:checked ~ .icons {
+    visibility: visible;
+    opacity: 1;
+    top: 420px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 0;
+  }
+  .container .header #menu-toggle:checked ~ .icons .saved,
+  .container .header #menu-toggle:checked ~ .icons .account {
+    width: 40px;
+    height: 40px;
+  }
+  .container .header .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 420px;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 2px -11px 12px 4px grey;
+    background-color: #2a9d8f;
+  }
+  .container .header .menu div {
+    display: block;
+  }
+  .container .header .icons {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 0;
+    width: 450px;
+    height: 100px;
+    margin: 0;
+    background-color: white;
+    box-shadow: 2px 2px 12px 4px grey;
+    z-index: 1;
+  }
+  /*.container {
+    padding: 50px;
+    .header {
+      height: 120px;
+      .logo {
+        img {
+          width: 125px;
+        }
+        top: 28px;
+        left: 50px;
+      }
+      .burger {
+        width: 36px;
+        height: 36px;
+        top: 42px;
+        right: 50px;
+        span {
+          height: 5px;
+        }
+        span::before {
+          height: 5px;
+        }
+        span::after {
+          height: 5px;
+        }
+      }
+      .burger span::before {
+        top: -14px;
+      }
+      .burger span::after {
+        top: 14px;
+      }
+      .menu,
+      .icons {
+        width: 300px;
+      }
+      #menu-toggle:checked ~ .menu {
+        padding: 20px 50px 35px;
+        div {
+          a {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }*/
   .start {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .start .start-wrap {
     grid-template-columns: 100%;
@@ -589,6 +627,9 @@
   .container {
     padding: 40px;
   }
+  .container .header {
+    height: 120px;
+  }
   .container .header .logo {
     top: 33px;
     left: 40px;
@@ -597,6 +638,9 @@
     width: 125px;
   }
   .container .header .burger {
+    width: 40px;
+    height: 40px;
+    top: 40px;
     right: 40px;
   }
   .start {
@@ -724,6 +768,24 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .container .header .burger {
+    width: 30px;
+    height: 30px;
+    top: 44px;
+  }
+  .container .header .burger span {
+    height: 4px;
+  }
+  .container .header .burger span:before,
+  .container .header .burger span:after {
+    height: 4px;
+  }
+  .container .header .burger span:before {
+    top: -12px;
+  }
+  .container .header .burger span:after {
+    top: 12px;
+  }
   .start .start-wrap .library {
     padding: 40px;
   }
